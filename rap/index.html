@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUBBABLOX Search</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #0f0f0f;
+    font-family: 'Segoe UI', sans-serif;
+    color: #f0f0f0;
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    background: rgba(30, 30, 30, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+  .topbar img {
+    height: 42px;
+  }
+
+  .search-icon {
+    cursor: pointer;
+    font-size: 26px;
+    user-select: none;
+    transition: transform 0.2s;
+  }
+  .search-icon:hover {
+    transform: scale(1.1);
+  }
+
+  .search-container {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(40, 40, 40, 0.95);
+    padding: 12px;
+    border-radius: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .search-container.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .search-container input {
+    padding: 8px 10px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: white;
+    width: 160px;
+  }
+
+  .search-container button {
+    background: #3a3a3a;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .search-container button:hover {
+    background: #505050;
+  }
+
+  .popup {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    background: rgba(35, 35, 35, 0.95);
+    max-height: 320px;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 10px;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .popup div {
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+  .popup div:hover {
+    background: #444;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .content {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .dim {
+    color: #bbb;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 15px;
+    margin: 15px 0;
+    backdrop-filter: blur(6px);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: dropIn 0.4s forwards;
+  }
+
+  @keyframes dropIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  h1, h3 {
+    margin: 5px 0;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .pagination button {
+    padding: 8px 14px;
+    background: #3a3a3a;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .pagination button:hover {
+    background: #505050;
+  }
+
+  .intro {
+    text-align: center;
+    margin-top: 40px;
+    color: #ccc;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+      text-align: center;
+    }
+    .card img {
+      margin-bottom: 10px;
+    }
+    .search-container {
+      right: 10px;
+      width: calc(100% - 20px);
+      flex-direction: column;
+    }
+    .search-container input,
+    .search-container button {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <img src="topbarimage.png" alt="Logo">
+  <div style="position: relative;">
+    <span class="search-icon" onclick="toggleSearch()">🔍</span>
+    <div class="search-container" id="searchBox">
+      <input type="text" id="username" placeholder="Enter username">
+      <button onclick="searchUser()">Search</button>
+    </div>
+    <div class="popup" id="results"></div>
+  </div>
+</div>
+
+<div class="content" id="profileContent">
+  <div id="introText" class="intro">
+    <h1>Welcome to BubbaRap</h1>
+    <p>Use the 🔍 icon to search for any user's collectibles and profile info.</p>
+  </div>
+</div>
+
+<script>
+let hidePopupTimeout;
+let currentUser = null;
+let currentCursor = '';
+let currentPage = 1;
+
+const results = document.getElementById('results');
+const searchBox = document.getElementById('searchBox');
+
+function toggleSearch() {
+  searchBox.classList.toggle('show');
+}
+
+results.addEventListener('mouseenter', () => {
+  clearTimeout(hidePopupTimeout);
+});
+results.addEventListener('mouseleave', () => {
+  startHideTimer();
+});
+
+function startHideTimer() {
+  hidePopupTimeout = setTimeout(() => {
+    results.style.display = 'none';
+  }, 3000);
+}
+
+async function searchUser() {
+  const keyword = document.getElementById('username').value;
+  const res = await fetch(`https://bb.zawg.ca/search/users/results?keyword=${encodeURIComponent(keyword)}&maxRows=5&startIndex=0`, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0'
+    }
+  });
+  const data = await res.json();
+  results.innerHTML = '';
+  data.UserSearchResults.forEach(user => {
+    const div = document.createElement('div');
+    div.textContent = user.DisplayName;
+    div.onclick = () => showUser(user);
+    results.appendChild(div);
+  });
+  results.style.display = 'block';
+  clearTimeout(hidePopupTimeout);
+  startHideTimer();
+}
+
+async function showUser(user, cursor = '') {
+  document.getElementById('introText').style.display = 'none';
+  currentUser = user;
+  currentCursor = cursor;
+  currentPage = cursor ? parseInt(cursor) + 1 : 1;
+
+  const profileDiv = document.getElementById('profileContent');
+  profileDiv.innerHTML = `
+    <h1>${user.DisplayName}</h1>
+    <p class="dim">ID ${user.UserId}</p>
+    <p id="loading">Loading collectibles...</p>
+  `;
+
+  const res = await fetch(`https://bb.zawg.ca/apisite/inventory/v1/users/${user.UserId}/assets/collectibles?limit=5000${cursor ? `&cursor=${cursor}` : ''}`, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0'
+    }
+  });
+  const data = await res.json();
+  const totalRap = data.totalRap ?? 0;
+
+  let html = `<h3>Total RAP: ${totalRap.toLocaleString()}</h3>`;
+  html += `<p class="dim">Page ${currentPage}</p>`;
+
+  const cards = await Promise.all(data.data.map(async item => {
+    const thumbRes = await fetch(`https://bb.zawg.ca/apisite/thumbnails/v1/assets?assetIds=${item.assetId}&format=png&size=420x420`, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0'
+      }
+    });
+    const thumbData = await thumbRes.json();
+    const imgUrl = 'https://bb.zawg.ca' + thumbData.data[0].imageUrl;
+
+    return `
+      <div class="card">
+        <img src="${imgUrl}" alt="${item.name}">
+        <div>
+          <h3>${item.name}</h3>
+          <p>RAP: ${item.recentAveragePrice}</p>
+          <p>Owned: ${item.ownedCount}</p>
+          ${item.serialNumber ? `<p>Serial #: ${item.serialNumber}</p>` : ''}
+        </div>
+      </div>
+    `;
+  }));
+
+  html += cards.join('');
+
+  if (!isNaN(data.previousPageCursor) || !isNaN(data.nextPageCursor)) {
+    html += '<div class="pagination">';
+    if (!isNaN(data.previousPageCursor)) {
+      html += `<button onclick="showUser(currentUser, ${data.previousPageCursor})">Previous</button>`;
+    }
+    if (!isNaN(data.nextPageCursor)) {
+      html += `<button onclick="showUser(currentUser, ${data.nextPageCursor})">Next</button>`;
+    }
+    html += '</div>';
+  }
+
+  document.getElementById('loading').remove();
+  profileDiv.innerHTML += html;
+  results.style.display = 'none';
+}
+</script>
+</body>
+</html>
