@@ -6,7 +6,7 @@
 
     GM_xmlhttpRequest({
         method: 'GET',
-        url: 'https://pastebin.com/raw/MhwRRJih',
+        url: 'get a pastebin link with raw text like 2.5 for example on it for version check',
         onload: function(response) {
             console.log("[Revix Version Check] " + response.status + " | " + response.responseText.trim())
             const latest = parseInt(response.responseText.trim(), 10);
