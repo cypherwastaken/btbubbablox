@@ -1,14 +1,384 @@
-// ==UserScript==
-// @name         Revix v2.5
-// @namespace    http://tampermonkey.net/
-// @version      2025-06-18
-// @description  Formerly BTBubbaBlox
-// @author       couldntguess on Discord
-// @match        https://collectibles.zawg.ca/*
-// @match        https://bb.zawg.ca/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=zawg.ca
-// @grant        GM_xmlhttpRequest
-// @connect      bb.zawg.ca
-// ==/UserScript==
+// Revix 2.5 official source uploaded by guess
+(function () {
+    'use strict';
 
-(function(_0x4d8919,_0x240bc3){const _0x160a97=_0x406c,_0x40db81=_0x4d8919();while(!![]){try{const _0x2b151e=-parseInt(_0x160a97(0xe2))/0x1*(-parseInt(_0x160a97(0x114))/0x2)+-parseInt(_0x160a97(0x14b))/0x3*(parseInt(_0x160a97(0x14c))/0x4)+parseInt(_0x160a97(0xeb))/0x5+parseInt(_0x160a97(0xe8))/0x6*(-parseInt(_0x160a97(0x136))/0x7)+parseInt(_0x160a97(0xe4))/0x8*(parseInt(_0x160a97(0x164))/0x9)+parseInt(_0x160a97(0x108))/0xa+-parseInt(_0x160a97(0x123))/0xb;if(_0x2b151e===_0x240bc3)break;else _0x40db81['push'](_0x40db81['shift']());}catch(_0x10fb90){_0x40db81['push'](_0x40db81['shift']());}}}(_0x6d7c,0x8a55d),(function(){'use strict';const _0x3dc53b=_0x406c;const _0x5d0685=2.5;GM_xmlhttpRequest({'method':_0x3dc53b(0xee),'url':_0x3dc53b(0xf7),'onload':function(_0x140859){const _0x1f6cd8=_0x3dc53b;console[_0x1f6cd8(0x146)](_0x1f6cd8(0x167)+_0x140859['status']+'\x20|\x20'+_0x140859[_0x1f6cd8(0xe9)][_0x1f6cd8(0x160)]());const _0xdebb12=parseInt(_0x140859[_0x1f6cd8(0xe9)][_0x1f6cd8(0x160)](),0xa);if(!isNaN(_0xdebb12)&&_0xdebb12==_0x5d0685||_0x140859[_0x1f6cd8(0xde)]!==0xc8){const _0x16862f=document['createElement'](_0x1f6cd8(0x11c));Object[_0x1f6cd8(0x10a)](_0x16862f[_0x1f6cd8(0x124)],{'position':_0x1f6cd8(0x119),'top':0x0,'left':0x0,'width':_0x1f6cd8(0xd1),'height':'100%','backdropFilter':_0x1f6cd8(0x104),'backgroundColor':_0x1f6cd8(0xd6),'zIndex':_0x1f6cd8(0x163)}),document[_0x1f6cd8(0x15c)][_0x1f6cd8(0xce)](_0x16862f);const _0x30d120=document['createElement'](_0x1f6cd8(0x11c));Object[_0x1f6cd8(0x10a)](_0x30d120[_0x1f6cd8(0x124)],{'position':'fixed','top':'50%','left':_0x1f6cd8(0x138),'transform':_0x1f6cd8(0xec),'backgroundColor':'#fff','padding':_0x1f6cd8(0x11a),'borderRadius':_0x1f6cd8(0xfb),'textAlign':_0x1f6cd8(0x13d),'maxWidth':_0x1f6cd8(0x135),'width':'80%','zIndex':_0x1f6cd8(0xea),'fontFamily':_0x1f6cd8(0x131),'boxShadow':_0x1f6cd8(0x165)});const _0x5bed75=document[_0x1f6cd8(0x152)]('h2');_0x5bed75[_0x1f6cd8(0x10e)]=_0x1f6cd8(0x129),Object['assign'](_0x5bed75[_0x1f6cd8(0x124)],{'marginBottom':_0x1f6cd8(0x101),'fontSize':'24px','color':_0x1f6cd8(0x154)});const _0x58af6b=document[_0x1f6cd8(0x152)]('p'),_0x159ec4=document[_0x1f6cd8(0x152)]('p');_0x58af6b[_0x1f6cd8(0x10e)]=_0x1f6cd8(0x126),_0x159ec4[_0x1f6cd8(0x10e)]='(Your\x20version:\x20'+_0x5d0685+',\x20Required:\x20'+_0x140859[_0x1f6cd8(0xe9)][_0x1f6cd8(0x160)]()+')',Object['assign'](_0x58af6b[_0x1f6cd8(0x124)],{'fontSize':_0x1f6cd8(0x101),'color':_0x1f6cd8(0x122),'marginBottom':'0'}),_0x30d120[_0x1f6cd8(0xce)](_0x5bed75),_0x30d120[_0x1f6cd8(0xce)](_0x58af6b),_0x30d120['appendChild'](_0x159ec4),document[_0x1f6cd8(0x15c)][_0x1f6cd8(0xce)](_0x30d120);}}});function _0x4d2268(_0x427d35,_0xce2537){const _0xbbfeb1=_0x3dc53b,_0x5ca64a=new MutationObserver(()=>{const _0xb8d04f=_0x406c,_0xa11638=document[_0xb8d04f(0xed)](_0x427d35);_0xa11638&&(_0x5ca64a['disconnect'](),_0xce2537(_0xa11638));});_0x5ca64a[_0xbbfeb1(0xfe)](document['body'],{'childList':!![],'subtree':!![]});}function _0x5d5ff0(){const _0x186776=_0x3dc53b,_0x21c77a=document[_0x186776(0x106)]('h3');for(const _0x50a0e2 of _0x21c77a){if([..._0x50a0e2[_0x186776(0x128)]][_0x186776(0xe5)](_0x2db8cd=>_0x2db8cd[_0x186776(0xe7)]('helloMessage'))&&_0x50a0e2['textContent'][_0x186776(0xe7)]('Hello')&&!_0x50a0e2[_0x186776(0x112)][_0x186776(0x13e)]){const _0x375535=[_0x186776(0x12a),'Hi',_0x186776(0x130),_0x186776(0x107),'Yo',_0x186776(0x139),_0x186776(0xf6),'Ahoy',_0x186776(0xf5),_0x186776(0x111),_0x186776(0xfc),_0x186776(0xf1),_0x186776(0x100),'Good\x20day',_0x186776(0xef)],_0x3e0a8f=_0x375535[Math[_0x186776(0xf9)](Math[_0x186776(0x13c)]()*_0x375535[_0x186776(0x147)])];_0x50a0e2[_0x186776(0x10e)]=_0x50a0e2[_0x186776(0x10e)][_0x186776(0x121)](/^Hello\b/,_0x3e0a8f),_0x50a0e2[_0x186776(0x112)][_0x186776(0x13e)]=_0x186776(0x110);break;}}setTimeout(_0x5d5ff0,0x1c2);}const _0x367b3f=new MutationObserver(()=>{_0x5d5ff0();});_0x367b3f[_0x3dc53b(0xfe)](document[_0x3dc53b(0x15c)],{'childList':!![],'subtree':!![]}),_0x5d5ff0(),_0x4d2268(_0x3dc53b(0xe0),_0x4af3bc=>{const _0x1b4580=_0x3dc53b,_0x345565=document['createElement']('div');_0x345565[_0x1b4580(0x124)]['display']=_0x1b4580(0x14f),_0x345565[_0x1b4580(0x124)][_0x1b4580(0x12c)]='center',_0x345565[_0x1b4580(0x124)][_0x1b4580(0xf8)]=_0x1b4580(0xcc),_0x345565[_0x1b4580(0x124)][_0x1b4580(0x151)]=_0x1b4580(0x120);const _0x3c7f69=document[_0x1b4580(0x152)](_0x1b4580(0xd2));_0x3c7f69[_0x1b4580(0xdd)]=_0x1b4580(0xd9),_0x3c7f69[_0x1b4580(0xdb)]=_0x1b4580(0xf0),Object[_0x1b4580(0x10a)](_0x3c7f69['style'],{'padding':_0x1b4580(0x125),'border':_0x1b4580(0xe1),'borderRadius':_0x1b4580(0x157),'outline':_0x1b4580(0xf2),'fontSize':'14px'});const _0x47f23a=document[_0x1b4580(0xed)]('a[href=\x22https://bb.zawg.ca/home\x22]'),_0x540e9f=_0x47f23a['cloneNode'](!![]);_0x540e9f[_0x1b4580(0x10e)]=_0x1b4580(0xff),_0x540e9f[_0x1b4580(0x137)]='#',_0x540e9f['style']['backgroundColor']='#22c55e';const _0x1664dd=document[_0x1b4580(0x152)](_0x1b4580(0x11c));Object[_0x1b4580(0x10a)](_0x1664dd[_0x1b4580(0x124)],{'position':_0x1b4580(0x161),'top':_0x1b4580(0xd1),'left':'0','zIndex':_0x1b4580(0x14e),'backgroundColor':_0x1b4580(0x11b),'border':_0x1b4580(0xe1),'borderRadius':_0x1b4580(0x157),'boxShadow':_0x1b4580(0xe6),'padding':'10px','marginTop':'5px','minWidth':_0x1b4580(0x132),'display':_0x1b4580(0xf2),'flexDirection':'column','gap':'6px'});const _0xcd9b44=document['createElement'](_0x1b4580(0x11c));_0xcd9b44[_0x1b4580(0x124)][_0x1b4580(0x117)]=_0x1b4580(0xc7),_0xcd9b44[_0x1b4580(0xce)](_0x1664dd),_0x540e9f[_0x1b4580(0x102)](_0x1b4580(0xdf),async _0x535c05=>{const _0x77c0ba=_0x1b4580;_0x535c05[_0x77c0ba(0x14a)]();const _0x2cf9ed=_0x3c7f69[_0x77c0ba(0x13a)][_0x77c0ba(0x160)]();if(!_0x2cf9ed)return;const _0x1e2ccc=_0x77c0ba(0xda)+encodeURIComponent(_0x2cf9ed)+'&maxRows=5&startIndex=0';try{const _0xd504b1=await fetch(_0x1e2ccc,{'headers':{'User-Agent':navigator[_0x77c0ba(0x15b)],'Accept':_0x77c0ba(0xd7)}}),_0x5f15d3=await _0xd504b1[_0x77c0ba(0xc9)]();_0x1664dd['innerHTML']='',!_0x5f15d3['UserSearchResults']['length']?_0x1664dd[_0x77c0ba(0xe3)]=_0x77c0ba(0x11d):_0x5f15d3[_0x77c0ba(0x142)][_0x77c0ba(0xd8)](_0x5f075e=>{const _0x45d3f6=_0x77c0ba,_0xdf94ba=document['createElement']('button');_0xdf94ba[_0x45d3f6(0x10e)]=_0x5f075e['Name'],Object[_0x45d3f6(0x10a)](_0xdf94ba[_0x45d3f6(0x124)],{'background':_0x45d3f6(0x149),'border':_0x45d3f6(0xf2),'padding':_0x45d3f6(0xd3),'textAlign':'left','cursor':_0x45d3f6(0x134),'borderRadius':_0x45d3f6(0xc6),'transition':_0x45d3f6(0xfa)}),_0xdf94ba[_0x45d3f6(0x102)](_0x45d3f6(0x10f),()=>{const _0x192ca9=_0x45d3f6;_0xdf94ba['style'][_0x192ca9(0x105)]='#e2e8f0';}),_0xdf94ba['addEventListener'](_0x45d3f6(0x15e),()=>{const _0x2b3c30=_0x45d3f6;_0xdf94ba[_0x2b3c30(0x124)]['background']=_0x2b3c30(0x149);}),_0xdf94ba['addEventListener'](_0x45d3f6(0xdf),()=>{const _0x23d548=_0x45d3f6;window[_0x23d548(0x15f)][_0x23d548(0x137)]=_0x23d548(0x156)+_0x5f075e[_0x23d548(0x141)];}),_0x1664dd[_0x45d3f6(0xce)](_0xdf94ba);}),_0x1664dd[_0x77c0ba(0x124)][_0x77c0ba(0xcd)]='flex';}catch(_0x182d20){console[_0x77c0ba(0x133)](_0x77c0ba(0xd5),_0x182d20),_0x1664dd['innerHTML']=_0x77c0ba(0xcb),_0x1664dd['style'][_0x77c0ba(0xcd)]=_0x77c0ba(0x14f);}}),_0x345565[_0x1b4580(0xce)](_0x3c7f69),_0x345565['appendChild'](_0x540e9f),_0xcd9b44[_0x1b4580(0xce)](_0x345565),_0x4af3bc[_0x1b4580(0x109)][_0x1b4580(0xcf)](_0xcd9b44,_0x4af3bc[_0x1b4580(0x166)]);});function _0x1c74af(){const _0x19524a=_0x3dc53b,_0x58ae1c=document[_0x19524a(0x106)](_0x19524a(0xdc));_0x58ae1c[_0x19524a(0xd8)](_0x5733df=>_0x5733df[_0x19524a(0x145)]());}const _0x50800e=new MutationObserver(()=>{_0x1c74af();});_0x50800e['observe'](document[_0x3dc53b(0x15c)],{'childList':!![],'subtree':!![]}),_0x1c74af();function _0x501200(){const _0x150126=_0x3dc53b,_0x429ab1=document[_0x150126(0x106)](_0x150126(0xf3));_0x429ab1[_0x150126(0xd8)](_0x3633fb=>{const _0x17326d=_0x150126,_0x3865a3=_0x3633fb[_0x17326d(0xed)](_0x17326d(0x148));_0x3865a3&&(_0x3865a3[_0x17326d(0x124)][_0x17326d(0x12e)]='8px');const _0x577ca1=_0x3633fb[_0x17326d(0xed)](_0x17326d(0x10c));_0x577ca1&&(_0x577ca1[_0x17326d(0x124)][_0x17326d(0x12e)]=_0x17326d(0x158));});}const _0x469693=new MutationObserver(()=>{_0x501200();});_0x469693['observe'](document['body'],{'childList':!![],'subtree':!![]}),_0x501200();function _0x5a516e(){const _0x2e221d=_0x3dc53b,_0x313ac4=document[_0x2e221d(0x106)](_0x2e221d(0x144));for(const _0x46d1a5 of _0x313ac4){const _0x473769=_0x46d1a5[_0x2e221d(0x118)](_0x2e221d(0x11c))[_0x2e221d(0x12d)];_0x473769&&_0x473769 instanceof HTMLElement&&(_0x473769[_0x2e221d(0x124)][_0x2e221d(0x12e)]=_0x2e221d(0x158));}}_0x5a516e();const _0x4a38c7=new MutationObserver(()=>{_0x5a516e();});_0x4a38c7['observe'](document[_0x3dc53b(0x15c)],{'childList':!![],'subtree':!![]}),(function(){function _0x39a304(_0x221853){const _0x2f27a4=_0x406c,_0x394927=document[_0x2f27a4(0x106)]('h1');for(const _0x3c142f of _0x394927){if([..._0x3c142f['classList']]['some'](_0x44a266=>_0x44a266['startsWith'](_0x2f27a4(0x13b)))){const _0x5f5313=_0x3c142f[_0x2f27a4(0x10e)][_0x2f27a4(0x160)]();if(_0x221853['includes'](_0x5f5313)&&!_0x3c142f[_0x2f27a4(0xed)](_0x2f27a4(0x15a))){const _0x287686=document['createElement'](_0x2f27a4(0x103));_0x287686['className']=_0x2f27a4(0xd4),_0x287686[_0x2f27a4(0xe3)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20fill=\x22white\x22\x20height=\x2216\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20width=\x2216\x22\x20style=\x22margin-right:\x204px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M0\x200h24v24H0z\x22\x20fill=\x22none\x22/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M12\x200C5.37\x200\x200\x205.37\x200\x2012s5.37\x2012\x2012\x2012\x2012-5.37\x2012-12S18.63\x200\x2012\x200zm-1.2\x2017.4l-5.4-5.4\x201.8-1.8\x203.6\x203.6\x207.2-7.2\x201.8\x201.8-9\x209z\x22/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</svg>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22color:\x20white;\x22>Revix\x20✓</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',Object[_0x2f27a4(0x10a)](_0x287686[_0x2f27a4(0x124)],{'backgroundColor':_0x2f27a4(0x115),'padding':_0x2f27a4(0x153),'borderRadius':_0x2f27a4(0x158),'marginLeft':_0x2f27a4(0x120),'display':_0x2f27a4(0x13f),'alignItems':_0x2f27a4(0x13d),'fontSize':_0x2f27a4(0xfd),'fontWeight':_0x2f27a4(0x10d)}),_0x3c142f[_0x2f27a4(0xce)](_0x287686);}}}}function _0x23c375(){const _0x362062=_0x406c;GM_xmlhttpRequest({'method':_0x362062(0xee),'url':_0x362062(0xc8),'onload':function(_0xc74ed3){const _0x2a6dc4=_0x362062;try{const _0x10f770=JSON['parse'](_0xc74ed3[_0x2a6dc4(0xe9)]),_0x5cd146=new MutationObserver(()=>_0x39a304(_0x10f770));_0x5cd146['observe'](document[_0x2a6dc4(0x15c)],{'childList':!![],'subtree':!![]}),_0x39a304(_0x10f770);}catch(_0x37562c){console[_0x2a6dc4(0x133)](_0x2a6dc4(0x162),_0x37562c);}},'onerror':function(_0x235643){const _0x112509=_0x362062;console['error'](_0x112509(0xca),_0x235643);}});}_0x23c375();}());function _0x56ab1e(){const _0x5790fa=_0x3dc53b,_0x41e80b=document[_0x5790fa(0x106)](_0x5790fa(0x155));for(const _0x4b9c10 of _0x41e80b){const _0xbd1c72=_0x4b9c10[_0x5790fa(0x118)]('a');if(_0xbd1c72&&!_0xbd1c72[_0x5790fa(0x12b)]?.['classList']?.['contains']('btb-version')){const _0x1dffe4=document['createElement']('p');_0x1dffe4[_0x5790fa(0x11e)]='btb-version',_0x1dffe4['textContent']=_0x5790fa(0x15d)+_0x5d0685,_0x1dffe4[_0x5790fa(0x124)][_0x5790fa(0x127)]='8px',_0x1dffe4['style'][_0x5790fa(0xd0)]=_0x5790fa(0xfb),_0x1dffe4[_0x5790fa(0x124)][_0x5790fa(0x10b)]=_0x5790fa(0x12f),_0xbd1c72['parentNode'][_0x5790fa(0xcf)](_0x1dffe4,_0xbd1c72[_0x5790fa(0x166)]);}}}_0x56ab1e();const _0x5caec8=new MutationObserver(_0x56ab1e);_0x5caec8[_0x3dc53b(0xfe)](document[_0x3dc53b(0x15c)],{'childList':!![],'subtree':!![]});function _0x4f64d5(){const _0x2463a9=_0x3dc53b,_0x1480a4=document[_0x2463a9(0x106)](_0x2463a9(0xf4));for(const _0x3b94ed of _0x1480a4){_0x3b94ed[_0x2463a9(0x124)][_0x2463a9(0x12e)]='5px';}}_0x4f64d5();const _0x5a05fe=new MutationObserver(_0x4f64d5);_0x5a05fe['observe'](document[_0x3dc53b(0x15c)],{'childList':!![],'subtree':!![]});function _0x215de9(){const _0x3f1eab=_0x3dc53b,_0x420521=document['querySelectorAll']('img[src*=\x22https://bb.zawg.ca//images/thumbnails/\x22]');for(const _0x1c94af of _0x420521){_0x1c94af['style'][_0x3f1eab(0x12e)]='7px';}}_0x215de9();const _0xd1b047=new MutationObserver(_0x215de9);_0xd1b047[_0x3dc53b(0xfe)](document[_0x3dc53b(0x15c)],{'childList':!![],'subtree':!![]}),function _0x4a36c2(){const _0x1f0c30=_0x3dc53b,_0x129617=document['querySelector'](_0x1f0c30(0x11f))?.[_0x1f0c30(0x118)](_0x1f0c30(0x159));if(!_0x129617){setTimeout(_0x4a36c2,0xc8);return;}if(_0x129617['nextElementSibling']?.[_0x1f0c30(0xed)]('svg'))return;const _0x1756fe=_0x129617[_0x1f0c30(0x140)](![]),_0x2ebb99=document[_0x1f0c30(0x152)]('a');_0x2ebb99[_0x1f0c30(0x137)]=_0x1f0c30(0x14d),_0x2ebb99['target']=_0x1f0c30(0x116),_0x2ebb99[_0x1f0c30(0x143)]=_0x1f0c30(0x150);const _0x4bb519=_0x1f0c30(0x113);_0x2ebb99[_0x1f0c30(0xe3)]=_0x4bb519,_0x1756fe[_0x1f0c30(0xce)](_0x2ebb99),_0x129617[_0x1f0c30(0x109)][_0x1f0c30(0xcf)](_0x1756fe,_0x129617[_0x1f0c30(0x166)]);}();}()));function _0x406c(_0xc6274f,_0x1416ae){const _0x6d7ca1=_0x6d7c();return _0x406c=function(_0x406c25,_0xd6dad8){_0x406c25=_0x406c25-0xc6;let _0x5142f2=_0x6d7ca1[_0x406c25];return _0x5142f2;},_0x406c(_0xc6274f,_0x1416ae);}function _0x6d7c(){const _0x3d7239=['remove','log','length','div[class^=\x22card-\x22]','#f9f9f9','preventDefault','300oZcdeb','41032DIhzfp','https://discord.gg/EAW5B2EV22','9999','flex','noopener\x20noreferrer','marginLeft','createElement','4px\x208px','#dc2626','p[class^=\x22upgradeNowButton-\x22]','https://collectibles.zawg.ca/?user=','6px','8px','p[class^=\x22text-\x22]','.bt-verified','userAgent','body','Revix\x20v','mouseleave','location','trim','absolute','[Revix]\x20Failed\x20to\x20parse\x20verified\x20games\x20list:','99998','18WZOxwu','0\x204px\x2012px\x20rgba(0,0,0,0.25)','nextSibling','[Revix\x20Version\x20Check]\x20','4px','relative','https://pastebin.com/raw/b41d9KZ3','json','[Revix]\x20Failed\x20to\x20load\x20verified\x20games\x20list:','<div\x20style=\x22color:\x20red;\x22>Error\x20fetching\x20results</div>','5px','display','appendChild','insertBefore','fontSize','100%','input','8px\x2010px','bt-verified','Failed\x20to\x20fetch\x20user\x20search\x20results:','rgba(0,0,0,0.3)','application/json','forEach','text','https://bb.zawg.ca/search/users/results?keyword=','placeholder','div[class^=\x22adWrapper-\x22]','type','status','click','div.flex.items-center.space-x-2','1px\x20solid\x20#ccc','1121Wbgbki','innerHTML','3462104rPRoDl','some','0\x202px\x208px\x20rgba(0,0,0,0.15)','startsWith','1146RhlowB','responseText','99999','4246140TBRBKE','translate(-50%,\x20-50%)','querySelector','GET','Peace','Username','Namaste','none','div[class^=\x22gameCard-\x22]','button[class*=\x22buyButton-\x22]','Hola','Welcome','https://pastebin.com/raw/MhwRRJih','gap','floor','background\x200.2s\x20ease','12px','Ciao','14px','observe','Search','What\x27s\x20up','16px','addEventListener','span','blur(6px)','background','querySelectorAll','Salutations','7933370vvcQyl','parentNode','assign','color','img[class^=\x22image-\x22]','500','textContent','mouseenter','true','Bonjour','dataset','<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20\x20viewBox=\x220\x200\x2050\x2050\x22\x20width=\x2230px\x22\x20height=\x2230px\x22\x20style=\x22margin-right:5px;\x22><path\x20fill=\x22white\x22\x20d=\x22M\x2041.625\x2010.769531\x20C\x2037.644531\x207.566406\x2031.347656\x207.023438\x2031.078125\x207.003906\x20C\x2030.660156\x206.96875\x2030.261719\x207.203125\x2030.089844\x207.589844\x20C\x2030.074219\x207.613281\x2029.9375\x207.929688\x2029.785156\x208.421875\x20C\x2032.417969\x208.867188\x2035.652344\x209.761719\x2038.578125\x2011.578125\x20C\x2039.046875\x2011.867188\x2039.191406\x2012.484375\x2038.902344\x2012.953125\x20C\x2038.710938\x2013.261719\x2038.386719\x2013.429688\x2038.050781\x2013.429688\x20C\x2037.871094\x2013.429688\x2037.6875\x2013.378906\x2037.523438\x2013.277344\x20C\x2032.492188\x2010.15625\x2026.210938\x2010\x2025\x2010\x20C\x2023.789063\x2010\x2017.503906\x2010.15625\x2012.476563\x2013.277344\x20C\x2012.007813\x2013.570313\x2011.390625\x2013.425781\x2011.101563\x2012.957031\x20C\x2010.808594\x2012.484375\x2010.953125\x2011.871094\x2011.421875\x2011.578125\x20C\x2014.347656\x209.765625\x2017.582031\x208.867188\x2020.214844\x208.425781\x20C\x2020.0625\x207.929688\x2019.925781\x207.617188\x2019.914063\x207.589844\x20C\x2019.738281\x207.203125\x2019.34375\x206.960938\x2018.921875\x207.003906\x20C\x2018.652344\x207.023438\x2012.355469\x207.566406\x208.320313\x2010.8125\x20C\x206.214844\x2012.761719\x202\x2024.152344\x202\x2034\x20C\x202\x2034.175781\x202.046875\x2034.34375\x202.132813\x2034.496094\x20C\x205.039063\x2039.605469\x2012.972656\x2040.941406\x2014.78125\x2041\x20C\x2014.789063\x2041\x2014.800781\x2041\x2014.8125\x2041\x20C\x2015.132813\x2041\x2015.433594\x2040.847656\x2015.621094\x2040.589844\x20L\x2017.449219\x2038.074219\x20C\x2012.515625\x2036.800781\x209.996094\x2034.636719\x209.851563\x2034.507813\x20C\x209.4375\x2034.144531\x209.398438\x2033.511719\x209.765625\x2033.097656\x20C\x2010.128906\x2032.683594\x2010.761719\x2032.644531\x2011.175781\x2033.007813\x20C\x2011.234375\x2033.0625\x2015.875\x2037\x2025\x2037\x20C\x2034.140625\x2037\x2038.78125\x2033.046875\x2038.828125\x2033.007813\x20C\x2039.242188\x2032.648438\x2039.871094\x2032.683594\x2040.238281\x2033.101563\x20C\x2040.601563\x2033.515625\x2040.5625\x2034.144531\x2040.148438\x2034.507813\x20C\x2040.003906\x2034.636719\x2037.484375\x2036.800781\x2032.550781\x2038.074219\x20L\x2034.378906\x2040.589844\x20C\x2034.566406\x2040.847656\x2034.867188\x2041\x2035.1875\x2041\x20C\x2035.199219\x2041\x2035.210938\x2041\x2035.21875\x2041\x20C\x2037.027344\x2040.941406\x2044.960938\x2039.605469\x2047.867188\x2034.496094\x20C\x2047.953125\x2034.34375\x2048\x2034.175781\x2048\x2034\x20C\x2048\x2024.152344\x2043.785156\x2012.761719\x2041.625\x2010.769531\x20Z\x20M\x2018.5\x2030\x20C\x2016.566406\x2030\x2015\x2028.210938\x2015\x2026\x20C\x2015\x2023.789063\x2016.566406\x2022\x2018.5\x2022\x20C\x2020.433594\x2022\x2022\x2023.789063\x2022\x2026\x20C\x2022\x2028.210938\x2020.433594\x2030\x2018.5\x2030\x20Z\x20M\x2031.5\x2030\x20C\x2029.566406\x2030\x2028\x2028.210938\x2028\x2026\x20C\x2028\x2023.789063\x2029.566406\x2022\x2031.5\x2022\x20C\x2033.433594\x2022\x2035\x2023.789063\x2035\x2026\x20C\x2035\x2028.210938\x2033.433594\x2030\x2031.5\x2030\x20Z\x22/></svg>','66WxYmyE','#22c55e','_blank','position','closest','fixed','30px','#fff','div','<div\x20style=\x22padding:4px;\x22>No\x20users\x20found.</div>','className','p[class^=\x22text-\x22]\x20>\x20a\x20>\x20span[class^=\x22icon-nav-settings\x22][id=\x22nav-settings\x22]','10px','replace','#333','4216212BJNyRm','style','6px\x2010px','Please\x20visit\x20the\x20website\x20and\x20install\x20the\x20newest\x20update\x20to\x20continue\x20using\x20Revix.','marginTop','classList','Outdated!','Hey','nextElementSibling','alignItems','parentElement','borderRadius','#999','Greetings','Arial,\x20sans-serif','200px','error','pointer','400px','20867XoIFri','href','50%','Howdy','value','gameTitle-','random','center','greetingSet','inline-flex','cloneNode','UserId','UserSearchResults','rel','div[class^=\x22row\x20friendRow-\x22]'];_0x6d7c=function(){return _0x3d7239;};return _0x6d7c();}
+    const Cur_Version = 2.5;
+
+    GM_xmlhttpRequest({
+        method: 'GET',
+        url: 'https://pastebin.com/raw/MhwRRJih',
+        onload: function(response) {
+            console.log("[Revix Version Check] " + response.status + " | " + response.responseText.trim())
+            const latest = parseInt(response.responseText.trim(), 10);
+            if (!isNaN(latest) && latest == Cur_Version || response.status !== 200) {
+                const blurOverlay = document.createElement('div');
+                Object.assign(blurOverlay.style, {
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    backdropFilter: 'blur(6px)',
+                    backgroundColor: 'rgba(0,0,0,0.3)',
+                    zIndex: '99998',
+                });
+                document.body.appendChild(blurOverlay);
+
+                const popup = document.createElement('div');
+                Object.assign(popup.style, {
+                    position: 'fixed',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    backgroundColor: '#fff',
+                    padding: '30px',
+                    borderRadius: '12px',
+                    textAlign: 'center',
+                    maxWidth: '400px',
+                    width: '80%',
+                    zIndex: '99999',
+                    fontFamily: 'Arial, sans-serif',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.25)',
+                });
+
+                const title = document.createElement('h2');
+                title.textContent = 'Outdated!';
+                Object.assign(title.style, {
+                    marginBottom: '16px',
+                    fontSize: '24px',
+                    color: '#dc2626',
+                });
+
+                const message = document.createElement('p');
+                const message2 = document.createElement('p');
+                message.textContent = 'Please visit the website and install the newest update to continue using Revix.';
+                message2.textContent = '(Your version: ' + Cur_Version + ', Required: ' + response.responseText.trim() + ')';
+                Object.assign(message.style, {
+                    fontSize: '16px',
+                    color: '#333',
+                    marginBottom: '0',
+                });
+
+                popup.appendChild(title);
+                popup.appendChild(message);
+                popup.appendChild(message2);
+                document.body.appendChild(popup);
+            }
+        }
+    });
+
+    function waitForElement(selector, callback) {
+        const observer = new MutationObserver(() => {
+            const el = document.querySelector(selector);
+            if (el) {
+                observer.disconnect();
+                callback(el);
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    }
+
+    function replaceHelloGreetingOnce() {
+        const allH3s = document.querySelectorAll('h3');
+        for (const h3 of allH3s) {
+            if (
+                [...h3.classList].some(cls => cls.startsWith('helloMessage')) &&
+                h3.textContent.startsWith('Hello') &&
+                !h3.dataset.greetingSet
+            ) {
+                const greetings = ["Hey", "Hi", "Greetings", "Salutations", "Yo", "Howdy", "Welcome", "Ahoy", "Hola", "Bonjour", "Ciao", "Namaste", "What's up", "Good day", "Peace"];
+                const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+                h3.textContent = h3.textContent.replace(/^Hello\b/, randomGreeting);
+                h3.dataset.greetingSet = "true";
+                break;
+            }
+        }
+        setTimeout(replaceHelloGreetingOnce, 450);
+    }
+
+    const greetingObserver = new MutationObserver(() => {
+        replaceHelloGreetingOnce();
+    });
+    greetingObserver.observe(document.body, { childList: true, subtree: true });
+
+    replaceHelloGreetingOnce();
+
+    waitForElement('div.flex.items-center.space-x-2', (targetDiv) => {
+        const container = document.createElement('div');
+        container.style.display = 'flex';
+        container.style.alignItems = 'center';
+        container.style.gap = '5px';
+        container.style.marginLeft = '10px';
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.placeholder = 'Username';
+        Object.assign(input.style, {
+            padding: '6px 10px',
+            border: '1px solid #ccc',
+            borderRadius: '6px',
+            outline: 'none',
+            fontSize: '14px'
+        });
+
+        const originalBtn = document.querySelector('a[href="https://bb.zawg.ca/home"]');
+        const searchBtn = originalBtn.cloneNode(true);
+        searchBtn.textContent = 'Search';
+        searchBtn.href = '#';
+        searchBtn.style.backgroundColor = '#22c55e';
+
+        const dropdown = document.createElement('div');
+        Object.assign(dropdown.style, {
+            position: 'absolute',
+            top: '100%',
+            left: '0',
+            zIndex: '9999',
+            backgroundColor: '#fff',
+            border: '1px solid #ccc',
+            borderRadius: '6px',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+            padding: '10px',
+            marginTop: '5px',
+            minWidth: '200px',
+            display: 'none',
+            flexDirection: 'column',
+            gap: '6px'
+        });
+
+        const dropdownWrapper = document.createElement('div');
+        dropdownWrapper.style.position = 'relative';
+        dropdownWrapper.appendChild(dropdown);
+
+        searchBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const username = input.value.trim();
+            if (!username) return;
+
+            const url = `https://bb.zawg.ca/search/users/results?keyword=${encodeURIComponent(username)}&maxRows=5&startIndex=0`;
+
+            try {
+                const res = await fetch(url, {
+                    headers: { 'User-Agent': navigator.userAgent, 'Accept': 'application/json' }
+                });
+                const data = await res.json();
+
+                dropdown.innerHTML = '';
+                if (!data.UserSearchResults.length) {
+                    dropdown.innerHTML = '<div style="padding:4px;">No users found.</div>';
+                } else {
+                    data.UserSearchResults.forEach(user => {
+                        const option = document.createElement('button');
+                        option.textContent = user.Name;
+                        Object.assign(option.style, {
+                            background: '#f9f9f9',
+                            border: 'none',
+                            padding: '8px 10px',
+                            textAlign: 'left',
+                            cursor: 'pointer',
+                            borderRadius: '4px',
+                            transition: 'background 0.2s ease'
+                        });
+
+                        option.addEventListener('mouseenter', () => {
+                            option.style.background = '#e2e8f0';
+                        });
+                        option.addEventListener('mouseleave', () => {
+                            option.style.background = '#f9f9f9';
+                        });
+
+                        option.addEventListener('click', () => {
+                            window.location.href = `https://collectibles.zawg.ca/?user=${user.UserId}`;
+                        });
+
+                        dropdown.appendChild(option);
+                    });
+                }
+
+                dropdown.style.display = 'flex';
+            } catch (err) {
+                console.error('Failed to fetch user search results:', err);
+                dropdown.innerHTML = '<div style="color: red;">Error fetching results</div>';
+                dropdown.style.display = 'flex';
+            }
+        });
+
+        container.appendChild(input);
+        container.appendChild(searchBtn);
+        dropdownWrapper.appendChild(container);
+        targetDiv.parentNode.insertBefore(dropdownWrapper, targetDiv.nextSibling);
+    });
+    function removeAdWrappers() {
+        const ads = document.querySelectorAll('div[class^="adWrapper-"]');
+        ads.forEach(ad => ad.remove());
+    }
+    const adObserver = new MutationObserver(() => {
+        removeAdWrappers();
+    });
+    adObserver.observe(document.body, { childList: true, subtree: true });
+    removeAdWrappers();
+
+    function updateGameCardStyles() {
+        const gameCards = document.querySelectorAll('div[class^="gameCard-"]');
+
+        gameCards.forEach(gameCard => {
+            const card = gameCard.querySelector('div[class^="card-"]');
+            if (card) {
+                card.style.borderRadius = '8px';
+            }
+
+            const image = gameCard.querySelector('img[class^="image-"]');
+            if (image) {
+                image.style.borderRadius = '8px';
+            }
+        });
+    }
+
+    const cardObserver = new MutationObserver(() => {
+        updateGameCardStyles();
+    });
+    cardObserver.observe(document.body, { childList: true, subtree: true });
+    updateGameCardStyles();
+
+    function setCardBorderRadius() {
+        const friendRows = document.querySelectorAll('div[class^="row friendRow-"]');
+        for (const row of friendRows) {
+            const card = row.closest('div').parentElement;
+            if (card && card instanceof HTMLElement) {
+                card.style.borderRadius = '8px';
+            }
+        }
+    }
+
+    setCardBorderRadius();
+
+    const ccardObserver = new MutationObserver(() => {
+        setCardBorderRadius();
+    });
+    ccardObserver.observe(document.body, { childList: true, subtree: true });
+
+    (function () {
+        function addBTVerifiedBadge(verified_games) {
+            const allH1s = document.querySelectorAll('h1');
+            for (const h1 of allH1s) {
+                if ([...h1.classList].some(cls => cls.startsWith('gameTitle-'))) {
+                    const gameName = h1.textContent.trim();
+                    if (verified_games.includes(gameName) && !h1.querySelector('.bt-verified')) {
+                        const badge = document.createElement('span');
+                        badge.className = 'bt-verified';
+                        badge.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="16" viewBox="0 0 24 24" width="16" style="margin-right: 4px;">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm-1.2 17.4l-5.4-5.4 1.8-1.8 3.6 3.6 7.2-7.2 1.8 1.8-9 9z"/>
+                        </svg>
+                        <span style="color: white;">Revix ✓</span>
+                    `;
+                        Object.assign(badge.style, {
+                            backgroundColor: '#22c55e',
+                            padding: '4px 8px',
+                            borderRadius: '8px',
+                            marginLeft: '10px',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            fontSize: '14px',
+                            fontWeight: '500'
+                        });
+                        h1.appendChild(badge);
+                    }
+                }
+            }
+        }
+
+        function fetchVerifiedGamesAndObserve() {
+            GM_xmlhttpRequest({
+                method: 'GET',
+                url: 'https://pastebin.com/raw/b41d9KZ3',
+                onload: function (response) {
+                    try {
+                        const verified_games = JSON.parse(response.responseText);
+                        const observer = new MutationObserver(() => addBTVerifiedBadge(verified_games));
+                        observer.observe(document.body, { childList: true, subtree: true });
+                        addBTVerifiedBadge(verified_games);
+                    } catch (e) {
+                        console.error("[Revix] Failed to parse verified games list:", e);
+                    }
+                },
+                onerror: function (error) {
+                    console.error("[Revix] Failed to load verified games list:", error);
+                }
+            });
+        }
+
+        fetchVerifiedGamesAndObserve();
+    })();
+
+    function appendVersionTag() {
+        const buttons = document.querySelectorAll('p[class^="upgradeNowButton-"]');
+        for (const btn of buttons) {
+            const anchor = btn.closest('a');
+            if (anchor && !anchor.nextElementSibling?.classList?.contains('btb-version')) {
+                const versionTag = document.createElement('p');
+                versionTag.className = 'btb-version';
+                versionTag.textContent = `Revix v${Cur_Version}`;
+                versionTag.style.marginTop = '8px';
+                versionTag.style.fontSize = '12px';
+                versionTag.style.color = '#999';
+
+                anchor.parentNode.insertBefore(versionTag, anchor.nextSibling);
+            }
+        }
+    }
+
+    appendVersionTag();
+
+    const observer = new MutationObserver(appendVersionTag);
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    function styleBuyButtons() {
+        const buttons = document.querySelectorAll('button[class*="buyButton-"]');
+        for (const btn of buttons) {
+            btn.style.borderRadius = '5px';
+        }
+    }
+
+    styleBuyButtons();
+
+    const buyobserver = new MutationObserver(styleBuyButtons);
+    buyobserver.observe(document.body, { childList: true, subtree: true });
+
+    function styleGameThumbnail() {
+        const buttons = document.querySelectorAll('img[src*="https://bb.zawg.ca//images/thumbnails/"]');
+        for (const btn of buttons) {
+            btn.style.borderRadius = '7px';
+        }
+    }
+
+    styleGameThumbnail();
+
+    const thumbobserver = new MutationObserver(styleGameThumbnail);
+    thumbobserver.observe(document.body, { childList: true, subtree: true });
+
+    (function waitForSettingsIcon() {
+        const origP = document.querySelector('p[class^="text-"] > a > span[class^="icon-nav-settings"][id="nav-settings"]')?.closest('p[class^="text-"]');
+        if (!origP) {
+            setTimeout(waitForSettingsIcon, 200);
+            return;
+        }
+
+        if (origP.nextElementSibling?.querySelector('svg')) return;
+
+        const newP = origP.cloneNode(false);
+
+        const a = document.createElement('a');
+        a.href = 'https://discord.gg/EAW5B2EV22';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+
+        const svgString = `<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px" style="margin-right:5px;"><path fill="white" d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z"/></svg>`;
+
+        a.innerHTML = svgString;
+
+        newP.appendChild(a);
+
+        origP.parentNode.insertBefore(newP, origP.nextSibling);
+    })();
+})();
